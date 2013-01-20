@@ -1,0 +1,57 @@
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-family: Georgia, serif;
+      }
+
+      .muted {
+         color: #C9C7BE;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 960px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      a {
+        color: #f43111;
+      }
+
+      h1 {
+        margin-top: 1em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Bliss Pro", "aller_displayregular", sans-serif;
+      }
+
+      h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: rgb(51,51,51);
+      }
+
+
+
+body { counter-reset: H1; }   /* Create the counter for H1 */
+h1:before {
+  content: counter(H1) ". ";  /* Print the H1 number */
+  counter-increment: H1;  /* Add 1 to next H1 */
+}
+h1 { counter-reset: H2; }
+h2:before {
+  content: counter(H1) "." counter(H2) " ";
+  counter-increment: H2;
+}
+h2 { counter-reset: H3; }
+h3:before {
+  content: counter(H1) "." counter(H2) "." counter(H3) " ";
+  counter-increment:H3;
+}
+
+h3.doctitle:before {
+  content: none;
+  counter-increment: none;
+}

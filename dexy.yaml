@@ -1,0 +1,18 @@
+.md|jinja|markdown:
+    - .sh|bash
+    - assets
+    - markdown:
+        tables : {}
+        toc : { anchorlink : true }
+
+assets:
+    - .css
+    - .png
+    - .ico
+    - .jpg
+    - .eot
+    - .svg
+    - .ttf
+    - .woff
+    - .htpasswd
+    - .htaccess
